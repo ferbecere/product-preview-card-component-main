@@ -1,6 +1,98 @@
+@media only screen and (min-width: 768px) {
+  .card-image {
+    content: url(/images/image-product-desktop.jpg);
+  }
+  body {
+    max-width: 1440px;
+  }
+  .cardfull {
+    width: 768px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card-image {
+    content: url(/images/image-product-mobile.jpg);
+  }
+  .cardFull {
+    max-width: 375px;
+  }
+  .cardFull {
+    flex-direction: column;
+  }
+}
+/* img {
+  height: 100%;
+  width: 100%;
+} */
+
+.cardFull img {
+  object-fit: contain;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+}
+.cardFull {
+  display: flex;
+  /* flex-direction: row; */
+  /* flex: 1; */
+  height: 100px;
+  margin: 10px;
+  color: hsl(228, 12%, 48%);
+  background-color: white;
+  border-radius: 20px;
+  height: 100vh;
+  overflow: hidden;
+}
+.cardText h1,
+h2 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+}
+h2 {
+  color: hsl(158, 36%, 37%);
+}
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.cardText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.cardPricing {
+  display: flex;
+  align-items: center;
+}
+.cardPricing p {
+  text-decoration-line: line-through;
+}
+button {
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  border: 0px;
+  padding: 15px 95px;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+button img,
+p {
+  padding: 5px;
+}
+button:hover {
+  background-color: hsl(158, 36%, 27%);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
+  display: none;
+  outline: none;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
