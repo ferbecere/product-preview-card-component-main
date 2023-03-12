@@ -6,7 +6,7 @@
     max-width: 1440px;
   }
   .cardfull {
-    width: 768px;
+    width: 600px;
   }
 }
 
@@ -22,10 +22,15 @@
   }
 }
 
+.cardImageSection {
+  margin: 0;
+  padding: 0;
+}
 .cardFull img {
   object-fit: contain;
   max-height: 100%;
   max-width: 100%;
+  display: block;
 }
 body {
   display: flex;
@@ -43,7 +48,6 @@ body {
   background-color: white;
   border-radius: 20px;
   height: auto;
-  max-height: 100%;
   overflow: hidden;
 }
 .cardText h1,
