@@ -74,7 +74,7 @@ h6 {
   display: flex;
   align-items: center;
 }
-.cardPricing p {
+.cardPricing span {
   text-decoration-line: line-through;
   margin-left: 20px;
 }
